@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="uytiutiuytiu">
+    <title>Document</title>
+    <style>
+        .navigation {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navigation__item {
+            position: relative;
+            display: block;
+            color: blueviolet;
+            box-sizing: border-box;
+            cursor: pointer;
+            border: 1px solid #0af;
+            padding: 8px;
+        }
+
+        .navigation__item:hover {
+            color: red;
+        }
+
+        .navigation__subitem {
+            position: absolute;
+            left: -1px;
+            top: 34px;
+            display: none;
+            border: 1px solid #0af;
+            padding: 24px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .5), 0 4px 18px rgba(0, 0, 0, .5);
+            z-index: 2;
+        }
+
+        .navigation__item:hover .navigation__subitem,
+        .navigation__item:hover .navigation__subitem:hover {
+            display: block;
+        }
+
+        .navigation__subitem-item {
+            display: block;
+            padding: 4px;
+        }
+
+        .navigation__subitem-item:hover {
+           background-color: #ff0;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li class="navigation__item">ссылка 1
+                <div>
+                    <ul class="navigation__subitem">
+                        <li class="navigation__subitem-item">
+                            <a href="#" title="5476547">003</a></li>
+                        <li class="navigation__subitem-item">004</li>
+                        <li class="navigation__subitem-item">005</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="navigation__item">ссылкка 2</li>
+            <li class="navigation__item">ссылка 3</li>
+        </ul>
+
+    </nav>
+    <h1>
+        title
+    </h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Magnam necessitatibus 
+        distinctio praesentium sunt quis asperiores mollitia a
+        <a href="https://yandex.ru" title="яндекс">
+            yandex
+        </a>
+        numquam tempora, placeat, nesciunt 
+        <br><br>
+        dolorem perspiciatis provident doloribus, 
+        velit doloremque quos officia accusamus iusto.
+    </p>
+    <button>
+        yto686
+    </button>
+    
+</body>
+</html>
+
+
